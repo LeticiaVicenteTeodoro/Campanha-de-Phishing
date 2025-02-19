@@ -69,11 +69,19 @@
   <div class="container">
     <h1>Slide 3: O seguinte email é um phishing?</h1>
     <div class="question">
-      <p>email aqui
-        
-        
-        
-      </p>
+      <section style="max-width: 600px; margin: 20px auto; padding: 20px; border: 2px solid black; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+  <h2 style="text-align: center; color: #333;">Assunto: Atualização Urgente da Sua Conta Bancária</h2>
+  <p><strong>Caro cliente,</strong></p>
+  <p>Detectamos uma atividade incomum em sua conta e, por motivos de segurança, precisamos que você atualize suas informações imediatamente. Caso contrário, sua conta será bloqueada.</p>
+  <p>Por favor, clique no link abaixo para atualizar seus dados:</p>
+  <p style="text-align: center;">
+    <a href="#" style="color: blue; text-decoration: underline; font-weight: bold;">Atualizar minha conta agora</a>
+  </p>
+  <p>Atenciosamente,</p>
+  <p><strong>Equipe de Suporte ao Cliente</strong><br>Seu Banco</p>
+</section>
+
+
     </div>
     <div class="options">
       <div class="option" onclick="checkAnswer(this, false)">A) Não</div>
@@ -88,7 +96,7 @@
       if (isCorrect) {
         option.classList.add('correct');
         setTimeout(() => {
-          window.location.href = 'slide4.html';
+          window.location.href = 'slide7.html';
         }, 1000);
       } else {
         option.classList.add('incorrect');
