@@ -1,3 +1,31 @@
+Personas:
+
+1. Phished (Usuário Alvo do Ataque)
+
+    - Recebe e-mail
+
+    - É convencido a clicar
+
+    - Interage com o curso
+
+
+2. Phisher (Atacante)
+
+    - Envia e-mail
+
+    - Visualiza dashboard
+
+    - Analisa relatórios
+
+
+3. Sistema (Ferramenta utilizada no ataque)
+
+    - Gera relatórios
+
+    - Coleta dados
+
+
+
 Objetivo Geral do Projeto:
 
 O projeto "Campanha de Phishing" tem como principal objetivo educar os colaboradores da instituição PUC sobre os riscos de ataques de engenharia social, com foco na conscientização sobre a importância da segurança digital. A iniciativa visa simular um ataque de phishing realista, no qual funcionários e alunos receberão e-mails maliciosos disfarçados de notificações legítimas, com o objetivo de instigar o clique em links comprometidos que, ao serem acessados, levam os usuários a uma página falsa de captura. Esta ação é parte de um processo educacional que inclui a realização de um curso obrigatório de conscientização sobre phishing.
