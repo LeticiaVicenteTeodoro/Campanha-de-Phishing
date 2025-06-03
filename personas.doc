@@ -28,16 +28,16 @@ Personas:
 
 Objetivo Geral do Projeto:
 
-O projeto "Campanha de Phishing" tem como principal objetivo educar os colaboradores da instituição PUC sobre os riscos de ataques de engenharia social, com foco na conscientização sobre a importância da segurança digital. A iniciativa visa simular um ataque de phishing realista, no qual funcionários e alunos receberão e-mails maliciosos disfarçados de notificações legítimas, com o objetivo de instigar o clique em links comprometidos que, ao serem acessados, levam os usuários a uma página falsa de captura. Esta ação é parte de um processo educacional que inclui a realização de um curso obrigatório de conscientização sobre phishing.
+O projeto "Campanha de Phishing" tem como principal objetivo educar os colaboradores de empresas e instituições sobre os riscos de ataques de engenharia social, com foco na conscientização sobre a importância da segurança digital. A iniciativa visa simular um ataque de phishing realista, no qual usuários receberão e-mails maliciosos disfarçados de notificações legítimas, com o objetivo de instigar o clique em links comprometidos que, ao serem acessados, levam os usuários a uma página falsa de captura. Esta ação é parte de um processo educacional que inclui a realização de um curso obrigatório de conscientização sobre phishing.
 
 1. Usuários:
 No contexto deste projeto, os "usuários" são os destinatários e os responsáveis pela análise das interações durante a campanha de phishing. Este documento define claramente quem recebe o phishing, quem manda e quem será responsável por monitorar e analisar os resultados.
 
 1.1. Quem recebe o phishing: 
-Os usuários que recebem o phishing são colaboradores e alunos da PUC, sendo esses os alvos do ataque simulado. Eles recebem e-mails maliciosos disfarçados de notificações sobre dados desatualizados, solicitando a atualização de informações via um link falso. A intenção é observar como esses indivíduos reagem ao ataque e identificar os que caem na fraude.
+Os usuários que recebem o phishing são os alvos do ataque simulado. Eles recebem e-mails maliciosos disfarçados de notificações sobre um trabalho extensionista, solicitando um feedback. A intenção é observar como esses indivíduos reagem ao ataque e identificar os que caem na fraude.
 
 1.2. Quem envia e gerencia o phishing:
-O coordenador do curso juntamente com os alunos cridores do projeto são responsáveis pelo envio e gerenciamento da campanha de phishing. Eles criam e-mails maliciosos realistas que serão disparados aos usuários, gerenciam o desenvolvimento da página de captura falsa, e organizam o curso de conscientização que será apresentado aos usuários que caírem no phishing.
+Os alunos cridores do projeto são responsáveis pelo envio e gerenciamento da campanha de phishing. Eles criam e-mails maliciosos realistas que serão disparados aos usuários, gerenciam o desenvolvimento da página de captura falsa, e organizam o curso de conscientização que será apresentado aos usuários que caírem no phishing.
 
 1.3. Análise e Monitoramento:
 A análise dos resultados será realizada pela equipe responsável pela campanha, que utilizará ferramentas para monitorar quais usuários clicaram no link . Esses dados serão analisados para fornecer métricas sobre a eficácia da campanha e identificar áreas de melhoria.
@@ -45,17 +45,17 @@ A análise dos resultados será realizada pela equipe responsável pela campanha
 2. Envio de emails e Objetivos:
 
 2.1. Emails: 
-Os emails serão enviados por scripts de shell ou códigos em python.
+Os emails serão enviados por códigos em python.
 
 2.2. Objetivos:
 O principal objetivo é realizar uma simulação de phishing de forma controlada, permitindo que a equipe de segurança observe os comportamentos dos usuários e forneça treinamento sobre como identificar e-mails fraudulentos. A plataforma também oferece a capacidade de gerar relatórios detalhados, com análises sobre o sucesso da campanha e identificando quais usuários caíram na fraude.
 
 3. Funcionalidades:
 3.1. Envio de E-mail Malicioso:  
-A equipe enviará  e-mails maliciosos disfarçados de (serão enviados 5 emails com conteudos diferentes de forma aleatória), com links encobertos que, ao serem clicados, redirecionam para a página de captura falsa.
+A equipe enviará e-mails maliciosos disfarçados, com links encobertos que, ao serem clicados, redirecionam para a página de captura falsa.
 
 3.2. Página de Phishing: 
-Caso o usuário clique no link malicioso ele será redirecionado para uma página que diz "Você caiu em um phishing. Os usuários que caírem na armadilha do phishing serão automaticamente redirecionados para um curso de conscientização obrigatório. Este curso consiste em:
+Caso o usuário clique no link malicioso ele será redirecionado para uma página que diz "Essa é uma campanha de phishing". Os usuários que caírem na armadilha do phishing serão automaticamente redirecionados para um curso de conscientização obrigatório. Este curso consiste em:
 
 - Slides informativos sobre como identificar e-mails fraudulentos.
 - Vídeos educativos que explicam as práticas seguras para navegação online.
@@ -64,7 +64,7 @@ Nota: Será uma página voltada a acessibilidade dos usuários, nesse contexto s
 
 4. Plataforma:
 4.1. Monitoramento de Cliques:  
-Com o uso de códigos (provavelmente python) serão coletados dados de quem clicou nos emails, quem realizou o curso, entre outros. A partir disso será gerado um csv que será utilizado como fonte de dados para o PBI.
+Com o uso de códigos em python e um banco de dados no Postgres hospedado no Render, serão coletados dados de quem clicou nos emails, quem realizou o curso, entre outros. A partir disso será gerado uma dashboard para visualização dos dados.
 
 4.2. Relatórios e Análises:  
-A plataforma gera relatórios detalhados sobre os usuários que caíram no phishing, incluindo o momento exato do clique e o comportamento subsequente. Esses relatórios podem ser visualizados na interface do Power BI, permitindo uma análise aprofundada da eficácia da campanha.
+A plataforma gera relatórios detalhados sobre os usuários que caíram no phishing, incluindo o momento exato do clique e o comportamento subsequente. Esses relatórios podem ser visualizados na interface da dashboard, permitindo uma análise aprofundada da eficácia da campanha.
